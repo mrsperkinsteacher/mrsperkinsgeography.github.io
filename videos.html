@@ -6,101 +6,101 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .vid-section{margin-bottom:2.5rem;}
-  .vid-section-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;padding-bottom:8px;border-bottom:1px solid rgba(84,172,185,0.2);}
-  .vid-section-icon{font-size:20px;}
-  .vid-section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
-  .vid-section-badge{margin-left:auto;font-size:10px;font-weight:600;color:var(--teal-dark);background:rgba(84,172,185,0.12);padding:3px 10px;border-radius:12px;}
-  .vid-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
-  .vid-card{background:white;border-radius:12px;overflow:hidden;border:1px solid rgba(84,172,185,0.2);text-decoration:none;color:var(--text);display:flex;flex-direction:column;transition:border-color 0.2s,box-shadow 0.2s;}
-  .vid-card:hover{border-color:var(--teal-mid);box-shadow:0 3px 12px rgba(0,49,70,0.08);}
-  .vid-card-top{background:var(--navy);padding:0.9rem 1.1rem;}
-  .vid-card-accent{height:3px;background:linear-gradient(90deg,var(--yellow),var(--orange));}
-  .vid-badge-row{display:flex;align-items:center;gap:6px;margin-bottom:4px;}
-  .yt-badge{background:#FF0000;color:white;font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;}
-  .mine-badge{background:var(--amber);color:var(--navy);font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;}
-  .vid-type{font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;}
-  .vid-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;line-height:1.25;}
-  .vid-body{padding:1rem 1.1rem;flex:1;display:flex;flex-direction:column;}
-  .vid-desc{font-size:13px;color:#4a6270;line-height:1.6;flex:1;margin-bottom:0.75rem;}
-  .vid-link{font-size:12px;font-weight:600;color:var(--teal-mid);}
-  .mine-card .vid-card-top{background:var(--teal-dark);}
-  .mine-card{border-color:rgba(255,194,14,0.25);}
-  .mine-card:hover{border-color:rgba(255,194,14,0.5);}
+ .vid-section{margin-bottom:2.5rem;}
+ .vid-section-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;padding-bottom:8px;border-bottom:1px solid rgba(84,172,185,0.2);}
+ .vid-section-icon{font-size:20px;}
+ .vid-section-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
+ .vid-section-badge{margin-left:auto;font-size:10px;font-weight:600;color:var(--teal-dark);background:rgba(84,172,185,0.12);padding:3px 10px;border-radius:12px;}
+ .vid-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+ .vid-card{background:white;border-radius:12px;overflow:hidden;border:1px solid rgba(84,172,185,0.2);text-decoration:none;color:var(--text);display:flex;flex-direction:column;transition:border-color 0.2s,box-shadow 0.2s;}
+ .vid-card:hover{border-color:var(--teal-mid);box-shadow:0 3px 12px rgba(0,49,70,0.08);}
+ .vid-card-top{background:var(--navy);padding:0.9rem 1.1rem;}
+ .vid-card-accent{height:3px;background:linear-gradient(90deg,var(--yellow),var(--orange));}
+ .vid-badge-row{display:flex;align-items:center;gap:6px;margin-bottom:4px;}
+ .yt-badge{background:#FF0000;color:white;font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;}
+ .mine-badge{background:var(--amber);color:var(--navy);font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px;}
+ .vid-type{font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;}
+ .vid-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;line-height:1.25;}
+ .vid-body{padding:1rem 1.1rem;flex:1;display:flex;flex-direction:column;}
+ .vid-desc{font-size:13px;color:#4a6270;line-height:1.6;flex:1;margin-bottom:0.75rem;}
+ .vid-link{font-size:12px;font-weight:600;color:var(--teal-mid);}
+ .mine-card .vid-card-top{background:var(--teal-dark);}
+ .mine-card{border-color:rgba(255,194,14,0.25);}
+ .mine-card:hover{border-color:rgba(255,194,14,0.5);}
 </style>
 </head>
 <body>
 <nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
-    <ul class="nav-links">
-      <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-      <li><a href="syllabus.html">Syllabus</a></li>
-      <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-      <li><a href="elective.html">Stage 5 Elective 2027</a></li>
-      <li><a href="stage6.html">Stage 6</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="fun.html">Geography Fun</a></li>
-      <li><a href="journey.html">Your Journey</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav-accent"></div>
-  <div class="nav-mobile" id="mobileNav">
-    <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-    <a href="syllabus.html">Syllabus</a><a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="videos.html">Videos</a><a href="fun.html">Geography Fun</a><a href="journey.html">Your Journey</a><a href="contact.html">Contact</a>
-  </div>
+ <div class="nav-inner">
+ <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
+ <ul class="nav-links">
+ <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
+ <li><a href="syllabus.html">Syllabus</a></li>
+ <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
+ <li><a href="elective.html">Stage 5 Elective 2027</a></li>
+ <li><a href="stage6.html">Stage 6</a></li>
+ <li><a href="videos.html">Videos</a></li>
+ <li><a href="fun.html">Geography Fun</a></li>
+ <li><a href="journey.html">Your Journey</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ </ul>
+ <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"></button>
+ </div>
+ <div class="nav-accent"></div>
+ <div class="nav-mobile" id="mobileNav">
+ <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
+ <a href="syllabus.html">Syllabus</a><a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="videos.html">Videos</a><a href="fun.html">Geography Fun</a><a href="journey.html">Your Journey</a><a href="contact.html">Contact</a>
+ </div>
 </nav>
 
 <div class="page-hero">
-  <div class="page-eyebrow">Watch · Learn · Explore</div>
-  <h1 class="page-title">Geography <em>Videos</em></h1>
-  <p class="page-lead">Curated channels and playlists for Geography students - from Mrs Perkins' own selections to the best geography on YouTube.</p>
+ <div class="page-eyebrow">Watch · Learn · Explore</div>
+ <h1 class="page-title">Geography <em>Videos</em></h1>
+ <p class="page-lead">Curated channels and playlists for Geography students - from Mrs Perkins' own selections to the best geography on YouTube.</p>
 </div>
 <div class="page-accent"></div>
 
 <div class="main">
 
-  <div class="vid-section">
-    <div class="vid-section-header">
-      <span class="vid-section-icon">⭐</span>
-      <div class="vid-section-title">Mrs Perkins' playlists</div>
-      <span class="vid-section-badge">Your teacher's picks</span>
-    </div>
-    <div class="vid-grid">
-      <a class="vid-card mine-card" href="https://youtube.com/playlist?list=PLnjD1SmNJck0EpZR4F5EVUnensEkh4KbF" target="_blank">
-        <div class="vid-card-top"><div class="vid-badge-row"><span class="mine-badge">MRS PERKINS</span><span class="vid-type">Playlist</span></div><div class="vid-title">Geography Skills</div></div>
-        <div class="vid-card-accent"></div>
-        <div class="vid-body"><div class="vid-desc">Mrs Perkins' curated playlist of Geography skills videos - map reading, data interpretation, spatial analysis and fieldwork techniques for Stage 5 students.</div><div class="vid-link">Open playlist ↗</div></div>
-      </a>
-      <a class="vid-card mine-card" href="https://youtube.com/playlist?list=PLnjD1SmNJck023guglANgYcVO20M2BEG2" target="_blank">
-        <div class="vid-card-top"><div class="vid-badge-row"><span class="mine-badge">MRS PERKINS</span><span class="vid-type">Playlist</span></div><div class="vid-title">Study and Assessment Skills</div></div>
-        <div class="vid-card-accent"></div>
-        <div class="vid-body"><div class="vid-desc">How to study, how to approach assessments, and how to write great Geography responses. Essential viewing before any task or exam.</div><div class="vid-link">Open playlist ↗</div></div>
-      </a>
-    </div>
-  </div>
+ <div class="vid-section">
+ <div class="vid-section-header">
+ <span class="vid-section-icon">⭐</span>
+ <div class="vid-section-title">Mrs Perkins' playlists</div>
+ <span class="vid-section-badge">Your teacher's picks</span>
+ </div>
+ <div class="vid-grid">
+ <a class="vid-card mine-card" href="https://youtube.com/playlist?list=PLnjD1SmNJck0EpZR4F5EVUnensEkh4KbF" target="_blank">
+ <div class="vid-card-top"><div class="vid-badge-row"><span class="mine-badge">MRS PERKINS</span><span class="vid-type">Playlist</span></div><div class="vid-title">Geography Skills</div></div>
+ <div class="vid-card-accent"></div>
+ <div class="vid-body"><div class="vid-desc">Mrs Perkins' curated playlist of Geography skills videos - map reading, data interpretation, spatial analysis and fieldwork techniques for Stage 5 students.</div><div class="vid-link">Open playlist ↗</div></div>
+ </a>
+ <a class="vid-card mine-card" href="https://youtube.com/playlist?list=PLnjD1SmNJck023guglANgYcVO20M2BEG2" target="_blank">
+ <div class="vid-card-top"><div class="vid-badge-row"><span class="mine-badge">MRS PERKINS</span><span class="vid-type">Playlist</span></div><div class="vid-title">Study and Assessment Skills</div></div>
+ <div class="vid-card-accent"></div>
+ <div class="vid-body"><div class="vid-desc">How to study, how to approach assessments, and how to write great Geography responses. Essential viewing before any task or exam.</div><div class="vid-link">Open playlist ↗</div></div>
+ </a>
+ </div>
+ </div>
 
-  <div class="vid-section">
-    <div class="vid-section-header">
-      <span class="vid-section-icon">🌍</span>
-      <div class="vid-section-title">SDG videos</div>
-      <span class="vid-section-badge">United Nations</span>
-    </div>
-    <div class="vid-grid">
-      <a class="vid-card" href="https://www.youtube.com/channel/UCRfuAYy7MesZmgOi1Ezy0ng" target="_blank">
-        <div class="vid-card-top"><div class="vid-badge-row"><span class="yt-badge">YouTube</span><span class="vid-type">Channel</span></div><div class="vid-title">The Global Goals</div></div>
-        <div class="vid-card-accent"></div>
-        <div class="vid-body"><div class="vid-desc">Official channel for the 17 UN Sustainable Development Goals. Short, sharp explainer videos for every goal - ideal for Lesson 3 of The Three Films unit.</div><div class="vid-link">Visit channel ↗</div></div>
-      </a>
-      <a class="vid-card" href="https://www.youtube.com/channel/UC34VTJP2KCqFfI_nN9NVhoQ" target="_blank">
-        <div class="vid-card-top"><div class="vid-badge-row"><span class="yt-badge">YouTube</span><span class="vid-type">Channel</span></div><div class="vid-title">UN SDG Official</div></div>
-        <div class="vid-card-accent"></div>
-        <div class="vid-body"><div class="vid-desc">United Nations official SDG content - progress updates, goal explainers, world leader addresses and summit footage.</div><div class="vid-link">Visit channel ↗</div></div>
-      </a>
-    </div>
-  </div>
+ <div class="vid-section">
+ <div class="vid-section-header">
+ 
+ <div class="vid-section-title">SDG videos</div>
+ <span class="vid-section-badge">United Nations</span>
+ </div>
+ <div class="vid-grid">
+ <a class="vid-card" href="https://www.youtube.com/channel/UCRfuAYy7MesZmgOi1Ezy0ng" target="_blank">
+ <div class="vid-card-top"><div class="vid-badge-row"><span class="yt-badge">YouTube</span><span class="vid-type">Channel</span></div><div class="vid-title">The Global Goals</div></div>
+ <div class="vid-card-accent"></div>
+ <div class="vid-body"><div class="vid-desc">Official channel for the 17 UN Sustainable Development Goals. Short, sharp explainer videos for every goal - ideal for Lesson 3 of The Three Films unit.</div><div class="vid-link">Visit channel ↗</div></div>
+ </a>
+ <a class="vid-card" href="https://www.youtube.com/channel/UC34VTJP2KCqFfI_nN9NVhoQ" target="_blank">
+ <div class="vid-card-top"><div class="vid-badge-row"><span class="yt-badge">YouTube</span><span class="vid-type">Channel</span></div><div class="vid-title">UN SDG Official</div></div>
+ <div class="vid-card-accent"></div>
+ <div class="vid-body"><div class="vid-desc">United Nations official SDG content - progress updates, goal explainers, world leader addresses and summit footage.</div><div class="vid-link">Visit channel ↗</div></div>
+ </a>
+ </div>
+ </div>
 
 
 

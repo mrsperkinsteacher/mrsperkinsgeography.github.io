@@ -6,70 +6,70 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;}
-  .resource-item{display:flex;align-items:flex-start;gap:12px;padding:1rem 1.1rem;border-radius:10px;background:white;border:1px solid rgba(84,172,185,0.18);text-decoration:none;color:var(--text);transition:border-color 0.2s,box-shadow 0.2s;}
-  .resource-item:hover{border-color:var(--teal-mid);box-shadow:0 2px 10px rgba(0,49,70,0.07);}
-  .resource-icon{font-size:20px;margin-top:1px;flex-shrink:0;}
-  .resource-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
-  .resource-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px;}
-  .resource-desc{font-size:12px;color:#4a6270;line-height:1.5;}
-  .resource-uc{opacity:0.55;}
-  .uc-tag{font-size:10px;font-weight:600;color:#7a4f00;background:rgba(236,162,35,0.15);padding:1px 7px;border-radius:8px;margin-top:4px;display:inline-block;}
-  .group-label{font-size:12px;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid rgba(84,172,185,0.2);}
-  .section-group{margin-bottom:2.5rem;}
+ .resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;}
+ .resource-item{display:flex;align-items:flex-start;gap:12px;padding:1rem 1.1rem;border-radius:10px;background:white;border:1px solid rgba(84,172,185,0.18);text-decoration:none;color:var(--text);transition:border-color 0.2s,box-shadow 0.2s;}
+ .resource-item:hover{border-color:var(--teal-mid);box-shadow:0 2px 10px rgba(0,49,70,0.07);}
+ .resource-icon{font-size:20px;margin-top:1px;flex-shrink:0;}
+ .resource-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
+ .resource-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px;}
+ .resource-desc{font-size:12px;color:#4a6270;line-height:1.5;}
+ .resource-uc{opacity:0.55;}
+ .uc-tag{font-size:10px;font-weight:600;color:#7a4f00;background:rgba(236,162,35,0.15);padding:1px 7px;border-radius:8px;margin-top:4px;display:inline-block;}
+ .group-label{font-size:12px;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid rgba(84,172,185,0.2);}
+ .section-group{margin-bottom:2.5rem;}
 </style>
 </head>
 <body>
 <nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
-    <ul class="nav-links">
-      <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-      <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-      <li><a href="elective.html">Stage 5 Elective 2027</a></li>
-      <li><a href="stage6.html">Stage 6</a></li>
-      <li><a href="fun.html">Geography Fun</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav-accent"></div>
-  <div class="nav-mobile" id="mobileNav">
-    <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-    <a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="fun.html">Geography Fun</a><a href="contact.html">Contact</a>
-  </div>
+ <div class="nav-inner">
+ <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
+ <ul class="nav-links">
+ <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
+ <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
+ <li><a href="elective.html">Stage 5 Elective 2027</a></li>
+ <li><a href="stage6.html">Stage 6</a></li>
+ <li><a href="fun.html">Geography Fun</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ </ul>
+ <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"></button>
+ </div>
+ <div class="nav-accent"></div>
+ <div class="nav-mobile" id="mobileNav">
+ <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
+ <a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="fun.html">Geography Fun</a><a href="contact.html">Contact</a>
+ </div>
 </nav>
 <div class="page-hero">
-  <div class="page-eyebrow">The Three Films Lesson</div>
-  <h1 class="page-title">Resources</h1>
-  <p class="page-lead">Downloads, links and tools for the unit.</p>
+ <div class="page-eyebrow">The Three Films Lesson</div>
+ <h1 class="page-title">Resources</h1>
+ <p class="page-lead">Downloads, links and tools for the unit.</p>
 </div>
 <div class="page-accent"></div>
 <div class="main">
-  <div class="section-group">
-    <div class="group-label">Downloads</div>
-    <div class="resource-grid">
-      <a class="resource-item resource-uc" href="#"><div class="resource-icon">📄</div><div><div class="resource-label">Download</div><div class="resource-title">Student Workbook</div><div class="resource-desc">All six lessons, question sets, proposal framework and reflection prompts.</div><span class="uc-tag">Under construction</span></div></a>
-      <a class="resource-item resource-uc" href="#"><div class="resource-icon">🎬</div><div><div class="resource-label">Download</div><div class="resource-title">Film Choice Card</div><div class="resource-desc">Three film summaries side by side - read them and choose.</div><span class="uc-tag">Under construction</span></div></a>
-      <a class="resource-item resource-uc" href="#"><div class="resource-icon">📋</div><div><div class="resource-label">Download</div><div class="resource-title">Support Sheet</div><div class="resource-desc">Sentence starters, scale examples, case study cards and key vocabulary.</div><span class="uc-tag">Under construction</span></div></a>
-    </div>
-  </div>
-  <div class="section-group">
-    <div class="group-label">Films</div>
-    <div class="resource-grid">
-      <a class="resource-item" href="https://clickv.ie/w/bTSC" target="_blank"><div class="resource-icon">▶️</div><div><div class="resource-label">ClickView</div><div class="resource-title">2040</div><div class="resource-desc">Damon Gameau's award-winning Australian documentary. G rating. 92 minutes.</div></div></a>
-    </div>
-  </div>
-  <div class="section-group">
-    <div class="group-label">Websites</div>
-    <div class="resource-grid">
-      <a class="resource-item" href="https://sdgs.un.org/goals" target="_blank"><div class="resource-icon">🌐</div><div><div class="resource-label">Website</div><div class="resource-title">UN SDG Goals</div><div class="resource-desc">All 17 goals with targets listed. Start here for Lesson 3.</div></div></a>
-      <a class="resource-item" href="https://ourworldindata.org" target="_blank"><div class="resource-icon">📊</div><div><div class="resource-label">Website</div><div class="resource-title">Our World in Data</div><div class="resource-desc">Data and statistics on every SDG and global issue.</div></div></a>
-      <a class="resource-item" href="https://www.c40.org" target="_blank"><div class="resource-icon">🏙️</div><div><div class="resource-label">Website</div><div class="resource-title">C40 Cities</div><div class="resource-desc">Cities taking climate action. Great for SDG 11 case studies.</div></div></a>
-      <a class="resource-item" href="https://dashboards.sdgindex.org" target="_blank"><div class="resource-icon">🗺️</div><div><div class="resource-label">Website</div><div class="resource-title">SDG Index Map</div><div class="resource-desc">How is every country tracking on every SDG?</div></div></a>
-      <a class="resource-item" href="https://www.abc.net.au/news/environment" target="_blank"><div class="resource-icon">📰</div><div><div class="resource-label">Website</div><div class="resource-title">ABC Environment</div><div class="resource-desc">Current Australian environmental news.</div></div></a>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-label">Downloads</div>
+ <div class="resource-grid">
+ <a class="resource-item resource-uc" href="#"><div><div class="resource-label">Download</div><div class="resource-title">Student Workbook</div><div class="resource-desc">All six lessons, question sets, proposal framework and reflection prompts.</div><span class="uc-tag">Under construction</span></div></a>
+ <a class="resource-item resource-uc" href="#"><div><div class="resource-label">Download</div><div class="resource-title">Film Choice Card</div><div class="resource-desc">Three film summaries side by side - read them and choose.</div><span class="uc-tag">Under construction</span></div></a>
+ <a class="resource-item resource-uc" href="#"><div><div class="resource-label">Download</div><div class="resource-title">Support Sheet</div><div class="resource-desc">Sentence starters, scale examples, case study cards and key vocabulary.</div><span class="uc-tag">Under construction</span></div></a>
+ </div>
+ </div>
+ <div class="section-group">
+ <div class="group-label">Films</div>
+ <div class="resource-grid">
+ <a class="resource-item" href="https://clickv.ie/w/bTSC" target="_blank"><div class="resource-icon">️</div><div><div class="resource-label">ClickView</div><div class="resource-title">2040</div><div class="resource-desc">Damon Gameau's award-winning Australian documentary. G rating. 92 minutes.</div></div></a>
+ </div>
+ </div>
+ <div class="section-group">
+ <div class="group-label">Websites</div>
+ <div class="resource-grid">
+ <a class="resource-item" href="https://sdgs.un.org/goals" target="_blank"><div><div class="resource-label">Website</div><div class="resource-title">UN SDG Goals</div><div class="resource-desc">All 17 goals with targets listed. Start here for Lesson 3.</div></div></a>
+ <a class="resource-item" href="https://ourworldindata.org" target="_blank"><div><div class="resource-label">Website</div><div class="resource-title">Our World in Data</div><div class="resource-desc">Data and statistics on every SDG and global issue.</div></div></a>
+ <a class="resource-item" href="https://www.c40.org" target="_blank"><div class="resource-icon">️</div><div><div class="resource-label">Website</div><div class="resource-title">C40 Cities</div><div class="resource-desc">Cities taking climate action. Great for SDG 11 case studies.</div></div></a>
+ <a class="resource-item" href="https://dashboards.sdgindex.org" target="_blank"><div class="resource-icon">️</div><div><div class="resource-label">Website</div><div class="resource-title">SDG Index Map</div><div class="resource-desc">How is every country tracking on every SDG?</div></div></a>
+ <a class="resource-item" href="https://www.abc.net.au/news/environment" target="_blank"><div><div class="resource-label">Website</div><div class="resource-title">ABC Environment</div><div class="resource-desc">Current Australian environmental news.</div></div></a>
+ </div>
+ </div>
 </div>
 <footer><p>Mrs Perkins · SPCC · Site for educational use only</p></footer>
 </body>

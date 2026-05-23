@@ -6,172 +6,172 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .belong-block{background:white;border-radius:12px;padding:2rem;margin-bottom:2rem;border-left:4px solid var(--teal-mid);border-radius:0 12px 12px 0;}
-  .belong-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:12px;}
-  .belong-text{font-size:15px;color:#2a3f4a;line-height:1.8;}
-  .section-group{margin-bottom:2.5rem;}
-  .group-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;padding-bottom:8px;border-bottom:1px solid rgba(84,172,185,0.2);}
-  .group-icon{font-size:20px;}
-  .group-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
-  .stage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
-  .stage-card{background:white;border-radius:12px;padding:1.25rem;border:1px solid rgba(84,172,185,0.2);}
-  .stage-num{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--teal-mid);margin-bottom:4px;}
-  .stage-label{font-size:12px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
-  .stage-text{font-size:13px;color:#2a3f4a;line-height:1.65;}
-  .tip-list{display:flex;flex-direction:column;gap:10px;}
-  .tip{display:flex;gap:14px;background:white;border-radius:10px;padding:1.1rem 1.25rem;border:1px solid rgba(84,172,185,0.15);}
-  .tip-icon{font-size:22px;flex-shrink:0;margin-top:2px;}
-  .tip-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
-  .tip-text{font-size:13px;color:#4a6270;line-height:1.6;}
-  .quote-block{background:var(--navy);border-radius:12px;padding:2rem;text-align:center;margin-bottom:2rem;}
-  .quote-text{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.7;max-width:560px;margin:0 auto 10px;}
-  .quote-attr{font-size:12px;color:var(--teal-light);letter-spacing:0.5px;}
-  .push-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;}
-  .push-card{background:white;border-radius:10px;padding:1.1rem;border:1px solid rgba(84,172,185,0.2);}
-  .push-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px;}
-  .push-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:6px;}
-  .push-text{font-size:13px;color:#4a6270;line-height:1.6;}
-  .next-box{background:var(--navy);border-radius:12px;padding:1.75rem;}
-  .next-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:1rem;}
-  .next-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;}
-  .next-tile{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;text-decoration:none;color:white;transition:background 0.2s;}
-  .next-tile:hover{background:rgba(255,255,255,0.14);}
-  .next-tile-label{font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
-  .next-tile-title{font-size:13px;font-weight:600;}
+ .belong-block{background:white;border-radius:12px;padding:2rem;margin-bottom:2rem;border-left:4px solid var(--teal-mid);border-radius:0 12px 12px 0;}
+ .belong-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:12px;}
+ .belong-text{font-size:15px;color:#2a3f4a;line-height:1.8;}
+ .section-group{margin-bottom:2.5rem;}
+ .group-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;padding-bottom:8px;border-bottom:1px solid rgba(84,172,185,0.2);}
+ .group-icon{font-size:20px;}
+ .group-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
+ .stage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+ .stage-card{background:white;border-radius:12px;padding:1.25rem;border:1px solid rgba(84,172,185,0.2);}
+ .stage-num{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--teal-mid);margin-bottom:4px;}
+ .stage-label{font-size:12px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
+ .stage-text{font-size:13px;color:#2a3f4a;line-height:1.65;}
+ .tip-list{display:flex;flex-direction:column;gap:10px;}
+ .tip{display:flex;gap:14px;background:white;border-radius:10px;padding:1.1rem 1.25rem;border:1px solid rgba(84,172,185,0.15);}
+ .tip-icon{font-size:22px;flex-shrink:0;margin-top:2px;}
+ .tip-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+ .tip-text{font-size:13px;color:#4a6270;line-height:1.6;}
+ .quote-block{background:var(--navy);border-radius:12px;padding:2rem;text-align:center;margin-bottom:2rem;}
+ .quote-text{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.7;max-width:560px;margin:0 auto 10px;}
+ .quote-attr{font-size:12px;color:var(--teal-light);letter-spacing:0.5px;}
+ .push-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;}
+ .push-card{background:white;border-radius:10px;padding:1.1rem;border:1px solid rgba(84,172,185,0.2);}
+ .push-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px;}
+ .push-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+ .push-text{font-size:13px;color:#4a6270;line-height:1.6;}
+ .next-box{background:var(--navy);border-radius:12px;padding:1.75rem;}
+ .next-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:white;margin-bottom:1rem;}
+ .next-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;}
+ .next-tile{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;text-decoration:none;color:white;transition:background 0.2s;}
+ .next-tile:hover{background:rgba(255,255,255,0.14);}
+ .next-tile-label{font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
+ .next-tile-title{font-size:13px;font-weight:600;}
 </style>
 </head>
 <body>
 <nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
-    <ul class="nav-links">
-      <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-      <li><a href="syllabus.html">Syllabus</a></li>
-      <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-      <li><a href="elective.html">Stage 5 Elective 2027</a></li>
-      <li><a href="stage6.html">Stage 6</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="fun.html">Geography Fun</a></li>
-      <li><a href="journey.html">Your Journey</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav-accent"></div>
-  <div class="nav-mobile" id="mobileNav">
-    <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-    <a href="syllabus.html">Syllabus</a><a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="videos.html">Videos</a><a href="fun.html">Geography Fun</a><a href="journey.html">Your Journey</a><a href="contact.html">Contact</a>
-  </div>
+ <div class="nav-inner">
+ <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
+ <ul class="nav-links">
+ <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
+ <li><a href="syllabus.html">Syllabus</a></li>
+ <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
+ <li><a href="elective.html">Stage 5 Elective 2027</a></li>
+ <li><a href="stage6.html">Stage 6</a></li>
+ <li><a href="videos.html">Videos</a></li>
+ <li><a href="fun.html">Geography Fun</a></li>
+ <li><a href="journey.html">Your Journey</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ </ul>
+ <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"></button>
+ </div>
+ <div class="nav-accent"></div>
+ <div class="nav-mobile" id="mobileNav">
+ <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
+ <a href="syllabus.html">Syllabus</a><a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="videos.html">Videos</a><a href="fun.html">Geography Fun</a><a href="journey.html">Your Journey</a><a href="contact.html">Contact</a>
+ </div>
 </nav>
 
 <div class="page-hero">
-  <div class="page-eyebrow">For every Geography student</div>
-  <h1 class="page-title">Your <em>Geography Journey</em></h1>
-  <p class="page-lead">Geography is for curious people. If you've ever wondered why the world is the way it is - you're already a geographer.</p>
+ <div class="page-eyebrow">For every Geography student</div>
+ <h1 class="page-title">Your <em>Geography Journey</em></h1>
+ <p class="page-lead">Geography is for curious people. If you've ever wondered why the world is the way it is - you're already a geographer.</p>
 </div>
 <div class="page-accent"></div>
 
 <div class="main">
 
-  <div class="belong-block">
-    <div class="belong-title">You belong here.</div>
-    <div class="belong-text">Geography isn't just a subject - it's a way of seeing the world. It asks the questions that matter: Why do people live where they do? Who has power and who doesn't? What happens to a place when the climate changes? How do ordinary decisions - yours included - shape the planet?<br><br>You don't need to be an expert. You need to be curious. There are no wrong answers in Geography. There are only deeper questions.</div>
-  </div>
+ <div class="belong-block">
+ <div class="belong-title">You belong here.</div>
+ <div class="belong-text">Geography isn't just a subject - it's a way of seeing the world. It asks the questions that matter: Why do people live where they do? Who has power and who doesn't? What happens to a place when the climate changes? How do ordinary decisions - yours included - shape the planet?<br><br>You don't need to be an expert. You need to be curious. There are no wrong answers in Geography. There are only deeper questions.</div>
+ </div>
 
-  <div class="section-group">
-    <div class="group-header"><span class="group-icon">🧭</span><div class="group-title">Where you are now</div></div>
-    <div class="stage-grid">
-      <div class="stage-card">
-        <div class="stage-num">Stage 5</div>
-        <div class="stage-label">Years 9–10</div>
-        <div class="stage-text">You're building the foundations - how to read the world, use evidence, and form a geographical argument. This is where curiosity becomes a skill. Every unit connects to something happening right now in the real world.</div>
-      </div>
-      <div class="stage-card">
-        <div class="stage-num">Elective</div>
-        <div class="stage-label">Choosing Geography</div>
-        <div class="stage-text">Choosing Geography for Stage 5 means choosing to engage with the real world. Six units, six different lenses on how the planet works - from extreme environments to geopolitics to the oceans.</div>
-      </div>
-      <div class="stage-card">
-        <div class="stage-num">Prelim</div>
-        <div class="stage-label">Year 11</div>
-        <div class="stage-text">Preliminary Geography builds your toolkit. You'll study biophysical interactions, changing places and human wellbeing - learning to think spatially, use data, and construct sophisticated geographical arguments.</div>
-      </div>
-      <div class="stage-card">
-        <div class="stage-num">HSC</div>
-        <div class="stage-label">Year 12</div>
-        <div class="stage-text">HSC Geography goes deep. Ecosystems at risk, global integration and a depth study where you investigate something you genuinely care about - your own geographical inquiry, your own voice.</div>
-      </div>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-header"><div class="group-title">Where you are now</div></div>
+ <div class="stage-grid">
+ <div class="stage-card">
+ <div class="stage-num">Stage 5</div>
+ <div class="stage-label">Years 9–10</div>
+ <div class="stage-text">You're building the foundations - how to read the world, use evidence, and form a geographical argument. This is where curiosity becomes a skill. Every unit connects to something happening right now in the real world.</div>
+ </div>
+ <div class="stage-card">
+ <div class="stage-num">Elective</div>
+ <div class="stage-label">Choosing Geography</div>
+ <div class="stage-text">Choosing Geography for Stage 5 means choosing to engage with the real world. Six units, six different lenses on how the planet works - from extreme environments to geopolitics to the oceans.</div>
+ </div>
+ <div class="stage-card">
+ <div class="stage-num">Prelim</div>
+ <div class="stage-label">Year 11</div>
+ <div class="stage-text">Preliminary Geography builds your toolkit. You'll study biophysical interactions, changing places and human wellbeing - learning to think spatially, use data, and construct sophisticated geographical arguments.</div>
+ </div>
+ <div class="stage-card">
+ <div class="stage-num">HSC</div>
+ <div class="stage-label">Year 12</div>
+ <div class="stage-text">HSC Geography goes deep. Ecosystems at risk, global integration and a depth study where you investigate something you genuinely care about - your own geographical inquiry, your own voice.</div>
+ </div>
+ </div>
+ </div>
 
-  <div class="section-group">
-    <div class="group-header"><span class="group-icon">💡</span><div class="group-title">How to learn well in Geography</div></div>
-    <div class="tip-list">
-      <div class="tip">
-        <div class="tip-icon">🗺️</div>
-        <div><div class="tip-title">Connect everything to a place</div><div class="tip-text">Geography lives in the real world. Whenever you learn a concept, ask: where does this happen? Find it on a map. Give it a name. Make it real. Abstract ideas become powerful when they're anchored to an actual place.</div></div>
-      </div>
-      <div class="tip">
-        <div class="tip-icon">📰</div>
-        <div><div class="tip-title">Read the news differently</div><div class="tip-text">Every news story is a Geography story. A flood, an election, a food shortage, a border dispute - start asking why it's happening there, and what geographical factors came before it. This is how geographers think.</div></div>
-      </div>
-      <div class="tip">
-        <div class="tip-icon">✍️</div>
-        <div><div class="tip-title">Write to think, not just to answer</div><div class="tip-text">The best Geography responses don't just describe - they explain, analyse and evaluate. Practice adding "this matters because..." after every point you make. That one habit will transform your writing.</div></div>
-      </div>
-      <div class="tip">
-        <div class="tip-icon">📊</div>
-        <div><div class="tip-title">Use data to back yourself up</div><div class="tip-text">A well-chosen statistic makes your argument impossible to ignore. Our World in Data has a number for everything - use it. Specific figures show markers you know your content, not just your opinion.</div></div>
-      </div>
-      <div class="tip">
-        <div class="tip-icon">❓</div>
-        <div><div class="tip-title">Ask the uncomfortable questions</div><div class="tip-text">Who benefits? Who is left out? Whose story isn't being told? Geography is at its best when it challenges you to think beyond the obvious answer. The most interesting responses always go a layer deeper.</div></div>
-      </div>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-header"><div class="group-title">How to learn well in Geography</div></div>
+ <div class="tip-list">
+ <div class="tip">
+ <div class="tip-icon">️</div>
+ <div><div class="tip-title">Connect everything to a place</div><div class="tip-text">Geography lives in the real world. Whenever you learn a concept, ask: where does this happen? Find it on a map. Give it a name. Make it real. Abstract ideas become powerful when they're anchored to an actual place.</div></div>
+ </div>
+ <div class="tip">
+ 
+ <div><div class="tip-title">Read the news differently</div><div class="tip-text">Every news story is a Geography story. A flood, an election, a food shortage, a border dispute - start asking why it's happening there, and what geographical factors came before it. This is how geographers think.</div></div>
+ </div>
+ <div class="tip">
+ <div class="tip-icon">️</div>
+ <div><div class="tip-title">Write to think, not just to answer</div><div class="tip-text">The best Geography responses don't just describe - they explain, analyse and evaluate. Practice adding "this matters because..." after every point you make. That one habit will transform your writing.</div></div>
+ </div>
+ <div class="tip">
+ 
+ <div><div class="tip-title">Use data to back yourself up</div><div class="tip-text">A well-chosen statistic makes your argument impossible to ignore. Our World in Data has a number for everything - use it. Specific figures show markers you know your content, not just your opinion.</div></div>
+ </div>
+ <div class="tip">
+ 
+ <div><div class="tip-title">Ask the uncomfortable questions</div><div class="tip-text">Who benefits? Who is left out? Whose story isn't being told? Geography is at its best when it challenges you to think beyond the obvious answer. The most interesting responses always go a layer deeper.</div></div>
+ </div>
+ </div>
+ </div>
 
-  <div class="quote-block">
-    <div class="quote-text">"The purpose of Geography is to understand our place in the world - and to imagine how it could be different."</div>
-    <div class="quote-attr">- Mrs Perkins</div>
-  </div>
+ <div class="quote-block">
+ <div class="quote-text">"The purpose of Geography is to understand our place in the world - and to imagine how it could be different."</div>
+ <div class="quote-attr">- Mrs Perkins</div>
+ </div>
 
-  <div class="section-group">
-    <div class="group-header"><span class="group-icon">🚀</span><div class="group-title">Want to go further?</div></div>
-    <div class="push-grid">
-      <div class="push-card">
-        <div class="push-label">Go deeper</div>
-        <div class="push-title">Read beyond the textbook</div>
-        <div class="push-text">Try Prisoners of Geography by Tim Marshall - it explains world politics through maps and physical geography. Or The Uninhabitable Earth by David Wallace-Wells for a confronting look at climate futures. Start with one chapter.</div>
-      </div>
-      <div class="push-card">
-        <div class="push-label">Show more</div>
-        <div class="push-title">Use data in your responses</div>
-        <div class="push-text">Our World in Data has a statistic for everything. A well-chosen number makes your argument impossible to ignore - and it shows markers you've gone beyond the basics.</div>
-      </div>
-      <div class="push-card">
-        <div class="push-label">Push harder</div>
-        <div class="push-title">Find a case study that surprises</div>
-        <div class="push-text">Don't use the same examples as everyone else. Find a place, a story, a situation that nobody else in your class will use. Surprising case studies stay in a marker's mind.</div>
-      </div>
-      <div class="push-card">
-        <div class="push-label">Do more</div>
-        <div class="push-title">Take Geography outside the classroom</div>
-        <div class="push-text">Notice your local area. How has it changed? Who lives there? What does the built environment tell you about power, money and planning decisions? Your street is a Geography resource.</div>
-      </div>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-header"><div class="group-title">Want to go further?</div></div>
+ <div class="push-grid">
+ <div class="push-card">
+ <div class="push-label">Go deeper</div>
+ <div class="push-title">Read beyond the textbook</div>
+ <div class="push-text">Try Prisoners of Geography by Tim Marshall - it explains world politics through maps and physical geography. Or The Uninhabitable Earth by David Wallace-Wells for a confronting look at climate futures. Start with one chapter.</div>
+ </div>
+ <div class="push-card">
+ <div class="push-label">Show more</div>
+ <div class="push-title">Use data in your responses</div>
+ <div class="push-text">Our World in Data has a statistic for everything. A well-chosen number makes your argument impossible to ignore - and it shows markers you've gone beyond the basics.</div>
+ </div>
+ <div class="push-card">
+ <div class="push-label">Push harder</div>
+ <div class="push-title">Find a case study that surprises</div>
+ <div class="push-text">Don't use the same examples as everyone else. Find a place, a story, a situation that nobody else in your class will use. Surprising case studies stay in a marker's mind.</div>
+ </div>
+ <div class="push-card">
+ <div class="push-label">Do more</div>
+ <div class="push-title">Take Geography outside the classroom</div>
+ <div class="push-text">Notice your local area. How has it changed? Who lives there? What does the built environment tell you about power, money and planning decisions? Your street is a Geography resource.</div>
+ </div>
+ </div>
+ </div>
 
-  <div class="next-box">
-    <div class="next-title">What would you like to explore next?</div>
-    <div class="next-grid">
-      <a class="next-tile" href="syllabus.html"><div class="next-tile-label">Syllabus</div><div class="next-tile-title">What you'll study &amp; be assessed on</div></a>
-      <a class="next-tile" href="videos.html"><div class="next-tile-label">Videos</div><div class="next-tile-title">Skills &amp; study playlists</div></a>
-      <a class="next-tile" href="elective.html"><div class="next-tile-label">Elective</div><div class="next-tile-title">Stage 5 units 2027</div></a>
-      <a class="next-tile" href="stage6.html"><div class="next-tile-label">Stage 6</div><div class="next-tile-title">Where Geography leads</div></a>
-      <a class="next-tile" href="fun.html"><div class="next-tile-label">Fun</div><div class="next-tile-title">Geography games &amp; maps</div></a>
-      <a class="next-tile" href="contact.html"><div class="next-tile-label">Questions?</div><div class="next-tile-title">Get in touch</div></a>
-    </div>
-  </div>
+ <div class="next-box">
+ <div class="next-title">What would you like to explore next?</div>
+ <div class="next-grid">
+ <a class="next-tile" href="syllabus.html"><div class="next-tile-label">Syllabus</div><div class="next-tile-title">What you'll study &amp; be assessed on</div></a>
+ <a class="next-tile" href="videos.html"><div class="next-tile-label">Videos</div><div class="next-tile-title">Skills &amp; study playlists</div></a>
+ <a class="next-tile" href="elective.html"><div class="next-tile-label">Elective</div><div class="next-tile-title">Stage 5 units 2027</div></a>
+ <a class="next-tile" href="stage6.html"><div class="next-tile-label">Stage 6</div><div class="next-tile-title">Where Geography leads</div></a>
+ <a class="next-tile" href="fun.html"><div class="next-tile-label">Fun</div><div class="next-tile-title">Geography games &amp; maps</div></a>
+ <a class="next-tile" href="contact.html"><div class="next-tile-label">Questions?</div><div class="next-tile-title">Get in touch</div></a>
+ </div>
+ </div>
 
 </div>
 <footer><p>Mrs Perkins · SPCC · Site for educational use only</p></footer>

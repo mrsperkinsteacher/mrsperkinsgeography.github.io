@@ -6,89 +6,89 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .fun-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;}
-  .fun-card{background:white;border-radius:12px;overflow:hidden;border:1px solid rgba(84,172,185,0.2);text-decoration:none;color:var(--text);display:flex;flex-direction:column;transition:border-color 0.2s,box-shadow 0.2s;}
-  .fun-card:hover{border-color:var(--teal-mid);box-shadow:0 4px 16px rgba(0,49,70,0.1);}
-  .fun-card-top{padding:1rem 1.25rem 0.85rem;display:flex;align-items:flex-start;gap:12px;}
-  .fun-icon{font-size:28px;flex-shrink:0;margin-top:2px;}
-  .fun-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:3px;}
-  .fun-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.25;}
-  .fun-desc{font-size:12px;color:#4a6270;line-height:1.55;}
-  .fun-accent{height:3px;background:linear-gradient(90deg,var(--yellow),var(--amber),var(--orange));margin-top:auto;}
-  .fact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;}
-  .fact-card{background:var(--navy);border-radius:10px;padding:1.1rem 1.25rem;}
-  .fact-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--amber);line-height:1;margin-bottom:4px;}
-  .fact-label{font-size:12px;font-weight:600;color:var(--teal-light);margin-bottom:3px;}
-  .fact-desc{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.5;}
-  .section-group{margin-bottom:3rem;}
-  .group-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;}
-  .group-icon{font-size:20px;}
-  .group-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
+ .fun-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;}
+ .fun-card{background:white;border-radius:12px;overflow:hidden;border:1px solid rgba(84,172,185,0.2);text-decoration:none;color:var(--text);display:flex;flex-direction:column;transition:border-color 0.2s,box-shadow 0.2s;}
+ .fun-card:hover{border-color:var(--teal-mid);box-shadow:0 4px 16px rgba(0,49,70,0.1);}
+ .fun-card-top{padding:1rem 1.25rem 0.85rem;display:flex;align-items:flex-start;gap:12px;}
+ .fun-icon{font-size:28px;flex-shrink:0;margin-top:2px;}
+ .fun-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:3px;}
+ .fun-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.25;}
+ .fun-desc{font-size:12px;color:#4a6270;line-height:1.55;}
+ .fun-accent{height:3px;background:linear-gradient(90deg,var(--yellow),var(--amber),var(--orange));margin-top:auto;}
+ .fact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;}
+ .fact-card{background:var(--navy);border-radius:10px;padding:1.1rem 1.25rem;}
+ .fact-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--amber);line-height:1;margin-bottom:4px;}
+ .fact-label{font-size:12px;font-weight:600;color:var(--teal-light);margin-bottom:3px;}
+ .fact-desc{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.5;}
+ .section-group{margin-bottom:3rem;}
+ .group-header{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;}
+ .group-icon{font-size:20px;}
+ .group-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);}
 </style>
 </head>
 <body>
 <nav>
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
-    <ul class="nav-links">
-      <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
-      <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
-      <li><a href="elective.html">Stage 5 Elective 2027</a></li>
-      <li><a href="stage6.html">Stage 6</a></li>
-      <li><a href="fun.html">Geography Fun</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav-accent"></div>
-  <div class="nav-mobile" id="mobileNav">
-    <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
-    <a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="fun.html">Geography Fun</a><a href="contact.html">Contact</a>
-  </div>
+ <div class="nav-inner">
+ <a class="nav-brand" href="index.html">Mrs Perkins Geography</a>
+ <ul class="nav-links">
+ <li class="has-dropdown"><a href="#">Stage 5 Lessons</a><div class="dropdown"><div class="has-subdropdown"><a href="#">The Three Films Lesson</a><div class="subdropdown"><a href="films.html">Films</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a></div></div></div></li>
+ <li class="has-dropdown"><a href="sdgs.html">SDGs</a><div class="dropdown"><a href="sdgs.html">SDG Summary</a></div></li>
+ <li><a href="elective.html">Stage 5 Elective 2027</a></li>
+ <li><a href="stage6.html">Stage 6</a></li>
+ <li><a href="fun.html">Geography Fun</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ </ul>
+ <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu"></button>
+ </div>
+ <div class="nav-accent"></div>
+ <div class="nav-mobile" id="mobileNav">
+ <a href="#">Stage 5 Lessons</a><a class="mobile-sub" href="#">The Three Films Lesson</a><a class="mobile-subsub" href="films.html">Films</a><a class="mobile-subsub" href="lessons.html">Lessons</a><a class="mobile-subsub" href="resources.html">Resources</a>
+ <a href="sdgs.html">SDGs</a><a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="fun.html">Geography Fun</a><a href="contact.html">Contact</a>
+ </div>
 </nav>
 <div class="page-hero">
-  <div class="page-eyebrow">Explore · Play · Discover</div>
-  <h1 class="page-title">Geography <em>Fun</em></h1>
-  <p class="page-lead">Games, maps, records and the coolest geography on the internet.</p>
+ <div class="page-eyebrow">Explore · Play · Discover</div>
+ <h1 class="page-title">Geography <em>Fun</em></h1>
+ <p class="page-lead">Games, maps, records and the coolest geography on the internet.</p>
 </div>
 <div class="page-accent"></div>
 <div class="main">
 
-  <div class="section-group">
-    <div class="group-header"><span class="group-icon">🎮</span><div class="group-title">Games &amp; Quizzes</div></div>
-    <div class="fun-grid">
-      <a class="fun-card" href="https://www.geoguessr.com" target="_blank"><div class="fun-card-top"><div class="fun-icon">🌍</div><div><div class="fun-label">Game</div><div class="fun-title">GeoGuessr</div><div class="fun-desc">Dropped somewhere on Earth via Street View. Figure out where you are using only the clues around you. Addictive.</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://www.seterra.com" target="_blank"><div class="fun-card-top"><div class="fun-icon">🗺️</div><div><div class="fun-label">Quiz</div><div class="fun-title">Seterra</div><div class="fun-desc">Map quizzes for every country, capital city, flag and region in the world. Free, fast and genuinely useful for exams.</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://www.sporcle.com/games/category/geography" target="_blank"><div class="fun-card-top"><div class="fun-icon">⏱️</div><div><div class="fun-label">Quiz</div><div class="fun-title">Sporcle Geography</div><div class="fun-desc">Timed geography quizzes - countries, capitals, rivers, mountains. How many can you name before the clock runs out?</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://geography.games" target="_blank"><div class="fun-card-top"><div class="fun-icon">🧭</div><div><div class="fun-label">Game</div><div class="fun-title">Geography Games</div><div class="fun-desc">Click-based map games - place countries, capitals and cities on a blank map. Great for building location knowledge.</div></div></div><div class="fun-accent"></div></a>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-header"><div class="group-title">Games &amp; Quizzes</div></div>
+ <div class="fun-grid">
+ <a class="fun-card" href="https://www.geoguessr.com" target="_blank"><div class="fun-card-top"><div><div class="fun-label">Game</div><div class="fun-title">GeoGuessr</div><div class="fun-desc">Dropped somewhere on Earth via Street View. Figure out where you are using only the clues around you. Addictive.</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://www.seterra.com" target="_blank"><div class="fun-card-top"><div class="fun-icon">️</div><div><div class="fun-label">Quiz</div><div class="fun-title">Seterra</div><div class="fun-desc">Map quizzes for every country, capital city, flag and region in the world. Free, fast and genuinely useful for exams.</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://www.sporcle.com/games/category/geography" target="_blank"><div class="fun-card-top"><div class="fun-icon">⏱️</div><div><div class="fun-label">Quiz</div><div class="fun-title">Sporcle Geography</div><div class="fun-desc">Timed geography quizzes - countries, capitals, rivers, mountains. How many can you name before the clock runs out?</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://geography.games" target="_blank"><div class="fun-card-top"><div><div class="fun-label">Game</div><div class="fun-title">Geography Games</div><div class="fun-desc">Click-based map games - place countries, capitals and cities on a blank map. Great for building location knowledge.</div></div></div><div class="fun-accent"></div></a>
+ </div>
+ </div>
 
-  <div class="section-group">
-    <div class="group-header"><span class="group-icon">🗺️</span><div class="group-title">Interactive Maps</div></div>
-    <div class="fun-grid">
-      <a class="fun-card" href="https://science.nasa.gov/specials/your-name-in-landsat/" target="_blank"><div class="fun-card-top"><div class="fun-icon">🛰️</div><div><div class="fun-label">NASA · Satellite</div><div class="fun-title">Your Name in Landsat</div><div class="fun-desc">NASA's Landsat satellite has been photographing Earth for 50 years. Find your name written in the landscape - rivers, coastlines, deserts.</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://earth.google.com/web/" target="_blank"><div class="fun-card-top"><div class="fun-icon">🌐</div><div><div class="fun-label">Map</div><div class="fun-title">Google Earth Web</div><div class="fun-desc">Fly anywhere on Earth in 3D. Explore the ocean floor, journey through time with historical imagery, or visit the world's wonders.</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://www.windy.com" target="_blank"><div class="fun-card-top"><div class="fun-icon">💨</div><div><div class="fun-label">Live Map</div><div class="fun-title">Windy</div><div class="fun-desc">A live animated map of wind, rain, temperature and ocean currents across the entire planet. Hypnotic and genuinely useful.</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://www.earthcam.com" target="_blank"><div class="fun-card-top"><div class="fun-icon">📷</div><div><div class="fun-label">Live Cameras</div><div class="fun-title">EarthCam</div><div class="fun-desc">Live webcams from every corner of the world - Times Square, the Eiffel Tower, African savannas, Antarctic research stations.</div></div></div><div class="fun-accent"></div></a>
-      <a class="fun-card" href="https://www.thetruesize.com" target="_blank"><div class="fun-card-top"><div class="fun-icon">📐</div><div><div class="fun-label">Map</div><div class="fun-title">The True Size Of…</div><div class="fun-desc">Maps lie about the size of countries. Drag any country across the globe to see its true size. Africa is enormous.</div></div></div><div class="fun-accent"></div></a>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-header"><span class="group-icon">️</span><div class="group-title">Interactive Maps</div></div>
+ <div class="fun-grid">
+ <a class="fun-card" href="https://science.nasa.gov/specials/your-name-in-landsat/" target="_blank"><div class="fun-card-top"><div class="fun-icon">️</div><div><div class="fun-label">NASA · Satellite</div><div class="fun-title">Your Name in Landsat</div><div class="fun-desc">NASA's Landsat satellite has been photographing Earth for 50 years. Find your name written in the landscape - rivers, coastlines, deserts.</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://earth.google.com/web/" target="_blank"><div class="fun-card-top"><div><div class="fun-label">Map</div><div class="fun-title">Google Earth Web</div><div class="fun-desc">Fly anywhere on Earth in 3D. Explore the ocean floor, journey through time with historical imagery, or visit the world's wonders.</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://www.windy.com" target="_blank"><div class="fun-card-top"><div><div class="fun-label">Live Map</div><div class="fun-title">Windy</div><div class="fun-desc">A live animated map of wind, rain, temperature and ocean currents across the entire planet. Hypnotic and genuinely useful.</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://www.earthcam.com" target="_blank"><div class="fun-card-top"><div><div class="fun-label">Live Cameras</div><div class="fun-title">EarthCam</div><div class="fun-desc">Live webcams from every corner of the world - Times Square, the Eiffel Tower, African savannas, Antarctic research stations.</div></div></div><div class="fun-accent"></div></a>
+ <a class="fun-card" href="https://www.thetruesize.com" target="_blank"><div class="fun-card-top"><div><div class="fun-label">Map</div><div class="fun-title">The True Size Of…</div><div class="fun-desc">Maps lie about the size of countries. Drag any country across the globe to see its true size. Africa is enormous.</div></div></div><div class="fun-accent"></div></a>
+ </div>
+ </div>
 
-  <div class="section-group">
-    <div class="group-header"><span class="group-icon">🏆</span><div class="group-title">Records &amp; Fun Facts</div></div>
-    <div class="fact-grid">
-      <div class="fact-card"><div class="fact-num">8,849m</div><div class="fact-label">Tallest mountain</div><div class="fact-desc">Mt Everest, Nepal/Tibet - measured to the summit above sea level.</div></div>
-      <div class="fact-card"><div class="fact-num">11,034m</div><div class="fact-label">Deepest ocean point</div><div class="fact-desc">Challenger Deep, Mariana Trench. Deeper than Everest is tall.</div></div>
-      <div class="fact-card"><div class="fact-num">6,650km</div><div class="fact-label">Longest river</div><div class="fact-desc">The Nile, Africa - though the Amazon gives it a close race.</div></div>
-      <div class="fact-card"><div class="fact-num">30.37M km²</div><div class="fact-label">Largest continent</div><div class="fact-desc">Africa. Bigger than the USA, China, India, Europe and Japan combined.</div></div>
-      <div class="fact-card"><div class="fact-num">−89.2°C</div><div class="fact-label">Coldest temperature ever</div><div class="fact-desc">Vostok Station, Antarctica, July 1983.</div></div>
-      <div class="fact-card"><div class="fact-num">56.7°C</div><div class="fact-label">Hottest temperature ever</div><div class="fact-desc">Furnace Creek, Death Valley, California, July 1913.</div></div>
-      <div class="fact-card"><div class="fact-num">25,724km</div><div class="fact-label">Australia's coastline</div><div class="fact-desc">One of the longest in the world - enough to walk for years.</div></div>
-      <div class="fact-card"><div class="fact-num">71%</div><div class="fact-label">Earth covered by ocean</div><div class="fact-desc">And we've explored less than 20% of it. Most of our planet is still unknown.</div></div>
-      <div class="fact-card"><div class="fact-num">195</div><div class="fact-label">Countries on Earth</div><div class="fact-desc">193 UN member states plus Vatican City and Palestine.</div></div>
-    </div>
-  </div>
+ <div class="section-group">
+ <div class="group-header"><div class="group-title">Records &amp; Fun Facts</div></div>
+ <div class="fact-grid">
+ <div class="fact-card"><div class="fact-num">8,849m</div><div class="fact-label">Tallest mountain</div><div class="fact-desc">Mt Everest, Nepal/Tibet - measured to the summit above sea level.</div></div>
+ <div class="fact-card"><div class="fact-num">11,034m</div><div class="fact-label">Deepest ocean point</div><div class="fact-desc">Challenger Deep, Mariana Trench. Deeper than Everest is tall.</div></div>
+ <div class="fact-card"><div class="fact-num">6,650km</div><div class="fact-label">Longest river</div><div class="fact-desc">The Nile, Africa - though the Amazon gives it a close race.</div></div>
+ <div class="fact-card"><div class="fact-num">30.37M km²</div><div class="fact-label">Largest continent</div><div class="fact-desc">Africa. Bigger than the USA, China, India, Europe and Japan combined.</div></div>
+ <div class="fact-card"><div class="fact-num">−89.2°C</div><div class="fact-label">Coldest temperature ever</div><div class="fact-desc">Vostok Station, Antarctica, July 1983.</div></div>
+ <div class="fact-card"><div class="fact-num">56.7°C</div><div class="fact-label">Hottest temperature ever</div><div class="fact-desc">Furnace Creek, Death Valley, California, July 1913.</div></div>
+ <div class="fact-card"><div class="fact-num">25,724km</div><div class="fact-label">Australia's coastline</div><div class="fact-desc">One of the longest in the world - enough to walk for years.</div></div>
+ <div class="fact-card"><div class="fact-num">71%</div><div class="fact-label">Earth covered by ocean</div><div class="fact-desc">And we've explored less than 20% of it. Most of our planet is still unknown.</div></div>
+ <div class="fact-card"><div class="fact-num">195</div><div class="fact-label">Countries on Earth</div><div class="fact-desc">193 UN member states plus Vatican City and Palestine.</div></div>
+ </div>
+ </div>
 
 </div>
 <footer><p>Mrs Perkins · SPCC · Site for educational use only</p></footer>
