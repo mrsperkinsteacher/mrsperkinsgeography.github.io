@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Cyclone Alfred makes landfall on Queensland coast",
+    "url": "https://www.abc.net.au/news/environment",
+    "source": "ABC News",
+    "date": "May 2026",
+    "connection": "Tropical cyclones are powerful examples of extreme weather systems - how they form over warm ocean water and the devastation they cause when they hit land.",
+    "sdg": "SDG 13 - Climate Action"
+  },
+  {
+    "title": "Great Barrier Reef records third mass bleaching event in five years",
+    "url": "https://www.abc.net.au/news/environment",
+    "source": "ABC Environment",
+    "date": "May 2026",
+    "connection": "Ocean warming and acidification are pushing coral ecosystems to their limits - a direct connection to our Oceanography unit and SDG 14.",
+    "sdg": "SDG 14 - Life Below Water"
+  },
+  {
+    "title": "Pacific Island nations call for stronger emissions commitments at UN summit",
+    "url": "https://www.abc.net.au/news/environment",
+    "source": "ABC News",
+    "date": "May 2026",
+    "connection": "Australia's neighbours in the Pacific face existential threats from sea level rise - this connects directly to our Australia's Neighbours unit and global citizenship.",
+    "sdg": "SDG 17 - Partnerships"
+  },
+  {
+    "title": "Australia's food exports reach record high despite drought in key regions",
+    "url": "https://www.abc.net.au/news/rural",
+    "source": "ABC Rural",
+    "date": "May 2026",
+    "connection": "Primary production under climate pressure - how Australia feeds the world while managing increasingly unreliable rainfall patterns.",
+    "sdg": "SDG 2 - Zero Hunger"
+  }
+]
