@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stage 5 Geography — Subject Selection | St Philip's Christian College</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal-mid: #54acb9;
+    --teal-light: #8ac5cf;
+    --navy: #003146;
+    --teal-dark: #004b5d;
+    --deep-teal: #005250;
+    --forest: #00645f;
+    --sage: #6aa69b;
+    --cream: #f7eee9;
+    --yellow: #ffcf01;
+    --amber: #ffc20e;
+    --orange: #eca223;
+    --red: #892338;
+  }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--cream);
+    padding: 2rem;
+    color: #1a2e38;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .school-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal-mid);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .page-subtitle {
+    font-size: 14px;
+    color: var(--teal-dark);
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--yellow), var(--orange));
+    margin: 12px auto 0;
+    border-radius: 2px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(84,172,185,0.25);
+    box-shadow: 0 2px 12px rgba(0,49,70,0.08);
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .card-header {
+    background: var(--navy);
+    padding: 1.1rem 1.25rem 0.9rem;
+  }
+
+  .accent-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--yellow) 0%, var(--amber) 50%, var(--orange) 100%);
+    margin: 0;
+  }
+
+  .topic-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--teal-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+  }
+
+  .topic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .card-body {
+    padding: 1rem 1.25rem;
+  }
+
+  .hook {
+    background: var(--cream);
+    border-left: 3px solid var(--teal-mid);
+    padding: 0.65rem 0.8rem;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--navy);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+    line-height: 1.55;
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--teal-dark);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 5px;
+    margin-top: 0.85rem;
+  }
+
+  .section-label:first-of-type {
+    margin-top: 0;
+  }
+
+  .content-text {
+    font-size: 13px;
+    color: #1a2e38;
+    line-height: 1.6;
+  }
+
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .pill {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+    background: rgba(84,172,185,0.12);
+    color: var(--teal-dark);
+    border: 1px solid rgba(84,172,185,0.3);
+  }
+
+  .sdg-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .sdg-pill {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+    color: white;
+  }
+
+  .stage6-box {
+    background: rgba(0,49,70,0.06);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--navy);
+    line-height: 1.6;
+  }
+
+  .card-footer {
+    padding: 0.6rem 1.25rem;
+    background: rgba(84,172,185,0.08);
+    border-top: 1px solid rgba(84,172,185,0.2);
+    font-size: 11px;
+    color: var(--sage);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  @media print {
+    body {
+      background: white;
+      padding: 1cm;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page-header { margin-bottom: 1.5rem; }
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .card {
+      break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="school-name">St Philip's Christian College Gosford</div>
+  <div class="page-title">Stage 5 Geography</div>
+  <div class="page-subtitle">Subject Selection — What could you study?</div>
+  <div class="divider"></div>
+</div>
+
+<div class="grid">
+
+  <!-- Card 1: Extreme Environments -->
+  <div class="card">
+    <div class="card-header">
+      <div class="topic-label">Unit 1</div>
+      <div class="topic-title">Extreme Environments</div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="card-body">
+      <div class="hook">Could you survive in the Sahara? Why do people choose to live where the Earth is trying to kill them?</div>
+      <div class="section-label">What you study</div>
+      <div class="content-text">Deserts, polar regions, high-altitude zones and wetlands — how physical processes create harsh conditions and how humans and ecosystems adapt to survive.</div>
+      <div class="section-label">Why it matters</div>
+      <div class="content-text">Climate change is pushing more of the world into extreme conditions. Understanding these environments is critical to managing future risk for billions of people.</div>
+      <div class="section-label">Careers</div>
+      <div class="pills">
+        <span class="pill">Climate scientist</span>
+        <span class="pill">Emergency management</span>
+        <span class="pill">Environmental engineer</span>
+        <span class="pill">Park ranger</span>
+        <span class="pill">Adventure tourism</span>
+      </div>
+      <div class="section-label">Links to the SDGs</div>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#3F7E44;">SDG 13 — Climate Action</span>
+        <span class="sdg-pill" style="background:#56C02B;">SDG 15 — Life on Land</span>
+        <span class="sdg-pill" style="background:#0A97D9;">SDG 6 — Clean Water</span>
+      </div>
+      <div class="section-label">Links to Stage 6 Geography (NSW 2022 Syllabus)</div>
+      <div class="stage6-box">Biophysical Interactions (Year 11) · Ecosystems at Risk (Year 12) · Environmental Change and Management</div>
+    </div>
+    <div class="card-footer">St Philip's Christian College — Geography</div>
+  </div>
+
+  <!-- Card 2: Geopolitics -->
+  <div class="card">
+    <div class="card-header">
+      <div class="topic-label">Unit 2</div>
+      <div class="topic-title">Geopolitics</div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="card-body">
+      <div class="hook">Why do countries go to war over lines on a map? Who really controls the world's resources?</div>
+      <div class="section-label">What you study</div>
+      <div class="content-text">Power, territory and conflict — how borders are drawn and contested, how nations compete for resources, and how geopolitical decisions shape the daily lives of ordinary people.</div>
+      <div class="section-label">Why it matters</div>
+      <div class="content-text">From Ukraine to the South China Sea, geopolitics is live news. Understanding it helps you make sense of the world rather than just watch it unfold.</div>
+      <div class="section-label">Careers</div>
+      <div class="pills">
+        <span class="pill">Diplomat / foreign affairs</span>
+        <span class="pill">Intelligence analyst</span>
+        <span class="pill">Journalist</span>
+        <span class="pill">International law</span>
+        <span class="pill">NGO work</span>
+      </div>
+      <div class="section-label">Links to the SDGs</div>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#00689D;">SDG 16 — Peace &amp; Justice</span>
+        <span class="sdg-pill" style="background:#19486A;">SDG 17 — Partnerships</span>
+        <span class="sdg-pill" style="background:#DD1367;">SDG 10 — Reduced Inequalities</span>
+      </div>
+      <div class="section-label">Links to Stage 6 Geography (NSW 2022 Syllabus)</div>
+      <div class="stage6-box">Global Integration (Year 12) · Human Wellbeing (Year 11) · Changing Places investigation</div>
+    </div>
+    <div class="card-footer">St Philip's Christian College — Geography</div>
+  </div>
+
+  <!-- Card 3: Global Citizenship -->
+  <div class="card">
+    <div class="card-header">
+      <div class="topic-label">Unit 3</div>
+      <div class="topic-title">Global Citizenship</div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="card-body">
+      <div class="hook">What does it mean to be responsible for something you've never seen? Can one person's choices change the world?</div>
+      <div class="section-label">What you study</div>
+      <div class="content-text">Global connections, shared responsibilities and local action — sustainability, ethical consumption, human rights and what it means to belong to a world community.</div>
+      <div class="section-label">Why it matters</div>
+      <div class="content-text">The choices you make every day — what you buy, eat, and post — are connected to people and ecosystems on the other side of the planet.</div>
+      <div class="section-label">Careers</div>
+      <div class="pills">
+        <span class="pill">Development worker</span>
+        <span class="pill">Sustainability consultant</span>
+        <span class="pill">Social entrepreneur</span>
+        <span class="pill">Human rights law</span>
+        <span class="pill">Education</span>
+      </div>
+      <div class="section-label">Links to the SDGs</div>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#19486A;">SDG 17 — Partnerships</span>
+        <span class="sdg-pill" style="background:#DD1367;">SDG 10 — Reduced Inequalities</span>
+        <span class="sdg-pill" style="background:#4C9F38;">SDG 12 — Responsible Consumption</span>
+      </div>
+      <div class="section-label">Links to Stage 6 Geography (NSW 2022 Syllabus)</div>
+      <div class="stage6-box">Human Wellbeing (Year 11) · Global Integration (Year 12) · Depth Study fieldwork</div>
+    </div>
+    <div class="card-footer">St Philip's Christian College — Geography</div>
+  </div>
+
+  <!-- Card 4: Oceanography -->
+  <div class="card">
+    <div class="card-header">
+      <div class="topic-label">Unit 4</div>
+      <div class="topic-title">Oceanography</div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="card-body">
+      <div class="hook">The ocean covers 71% of Earth — and we've explored less than 20% of it. What's down there?</div>
+      <div class="section-label">What you study</div>
+      <div class="content-text">Ocean systems, currents, marine ecosystems, sea-level rise, coral bleaching and the growing crisis of ocean pollution — including microplastics and ocean acidification.</div>
+      <div class="section-label">Why it matters</div>
+      <div class="content-text">Australia has one of the world's longest coastlines. The ocean regulates our climate, feeds billions, and is under unprecedented pressure from human activity.</div>
+      <div class="section-label">Careers</div>
+      <div class="pills">
+        <span class="pill">Marine biologist</span>
+        <span class="pill">Oceanographer</span>
+        <span class="pill">Coastal engineer</span>
+        <span class="pill">Environmental policy</span>
+        <span class="pill">Blue economy</span>
+      </div>
+      <div class="section-label">Links to the SDGs</div>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#007DBC;">SDG 14 — Life Below Water</span>
+        <span class="sdg-pill" style="background:#3F7E44;">SDG 13 — Climate Action</span>
+        <span class="sdg-pill" style="background:#0A97D9;">SDG 6 — Clean Water</span>
+      </div>
+      <div class="section-label">Links to Stage 6 Geography (NSW 2022 Syllabus)</div>
+      <div class="stage6-box">Biophysical Interactions (Year 11) · Ecosystems at Risk (Year 12) · Coastal fieldwork opportunities</div>
+    </div>
+    <div class="card-footer">St Philip's Christian College — Geography</div>
+  </div>
+
+  <!-- Card 5: Australia's Neighbours -->
+  <div class="card">
+    <div class="card-header">
+      <div class="topic-label">Unit 5</div>
+      <div class="topic-title">Australia's Neighbours</div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="card-body">
+      <div class="hook">Why do events in Indonesia, Timor-Leste and the Pacific Islands matter so much to Australia's future?</div>
+      <div class="section-label">What you study</div>
+      <div class="content-text">The physical and human geography of our region — population, development, environmental challenges, cultural diversity and Australia's interconnections with the Indo-Pacific.</div>
+      <div class="section-label">Why it matters</div>
+      <div class="content-text">Australia's security, economy and cultural identity are deeply tied to the region. Understanding our neighbours is not optional — it is essential.</div>
+      <div class="section-label">Careers</div>
+      <div class="pills">
+        <span class="pill">Aid and development</span>
+        <span class="pill">Defence / foreign policy</span>
+        <span class="pill">Trade and commerce</span>
+        <span class="pill">Cultural liaison</span>
+        <span class="pill">Tourism</span>
+      </div>
+      <div class="section-label">Links to the SDGs</div>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#19486A;">SDG 17 — Partnerships</span>
+        <span class="sdg-pill" style="background:#FD9D24;">SDG 11 — Sustainable Cities</span>
+        <span class="sdg-pill" style="background:#DD1367;">SDG 10 — Reduced Inequalities</span>
+      </div>
+      <div class="section-label">Links to Stage 6 Geography (NSW 2022 Syllabus)</div>
+      <div class="stage6-box">Changing Places (Year 11) · Human Wellbeing (Year 11) · Global Integration (Year 12)</div>
+    </div>
+    <div class="card-footer">St Philip's Christian College — Geography</div>
+  </div>
+
+  <!-- Card 6: Primary Production -->
+  <div class="card">
+    <div class="card-header">
+      <div class="topic-label">Unit 6</div>
+      <div class="topic-title">Primary Production</div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="card-body">
+      <div class="hook">How do we feed 8 billion people — and what happens when the land, water or climate can no longer keep up?</div>
+      <div class="section-label">What you study</div>
+      <div class="content-text">Agriculture, aquaculture, forestry and mining — how primary industries use and transform environments, the pressures of global food demand, and the future of sustainable production.</div>
+      <div class="section-label">Why it matters</div>
+      <div class="content-text">Australia is one of the world's leading food exporters. From drought to supply chains to genetically modified crops, these decisions shape what ends up on your plate.</div>
+      <div class="section-label">Careers</div>
+      <div class="pills">
+        <span class="pill">Agricultural scientist</span>
+        <span class="pill">Food systems analyst</span>
+        <span class="pill">Land economist</span>
+        <span class="pill">Rural planning</span>
+        <span class="pill">Agribusiness</span>
+      </div>
+      <div class="section-label">Links to the SDGs</div>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#DDA63A;">SDG 2 — Zero Hunger</span>
+        <span class="sdg-pill" style="background:#4C9F38;">SDG 12 — Responsible Consumption</span>
+        <span class="sdg-pill" style="background:#56C02B;">SDG 15 — Life on Land</span>
+      </div>
+      <div class="section-label">Links to Stage 6 Geography (NSW 2022 Syllabus)</div>
+      <div class="stage6-box">Biophysical Interactions (Year 11) · Ecosystems at Risk (Year 12) · Fieldwork and spatial technologies</div>
+    </div>
+    <div class="card-footer">St Philip's Christian College — Geography</div>
+  </div>
+
+</div>
+
+</body>
+</html>
