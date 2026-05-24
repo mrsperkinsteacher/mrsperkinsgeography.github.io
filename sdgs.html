@@ -6,10 +6,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .sdg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
+  .sdg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:2.5rem;}
   .sdg-tile{border-radius:10px;overflow:hidden;text-decoration:none;display:block;transition:opacity 0.2s,transform 0.15s;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
   .sdg-tile:hover{opacity:0.88;transform:translateY(-3px);}
   .sdg-tile img{width:100%;height:auto;display:block;}
+
+  .link-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2.5rem;}
+  .ext-link{display:inline-flex;align-items:center;gap:7px;background:var(--navy);color:white;text-decoration:none;padding:10px 18px;border-radius:8px;font-size:13px;font-weight:600;transition:background 0.2s;}
+  .ext-link:hover{background:var(--teal-dark);}
+  .ext-link.outline{background:white;color:var(--navy);border:1.5px solid rgba(84,172,185,0.4);}
+  .ext-link.outline:hover{background:var(--cream);}
+
+  .map-section{margin-bottom:3rem;}
+  .map-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px;}
+  .map-title{font-family:"Playfair Display",serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .map-desc{font-size:13px;color:#4a6270;line-height:1.65;margin-bottom:14px;max-width:680px;}
+  .map-frame{border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,49,70,0.12);}
+  .map-frame iframe{display:block;width:100%;height:500px;border:none;}
+  .map-credit{font-size:11px;color:#8a9aaa;margin-top:6px;}
+  .map-credit a{color:var(--teal-mid);text-decoration:none;}
+  .map-credit a:hover{text-decoration:underline;}
+
+  .divider{height:1px;background:rgba(84,172,185,0.15);margin:2.5rem 0;}
+
+  @media(max-width:600px){
+    .map-frame iframe{height:380px;}
+  }
 </style>
 </head>
 <body>
@@ -42,14 +64,18 @@
     <a href="elective.html">Stage 5 Elective 2027</a><a href="stage6.html">Stage 6</a><a href="syllabus.html">Syllabus</a><a href="sdgs.html">SDGs</a><a href="videos.html">Videos</a><a href="fun.html">Geography Fun</a><a href="sources.html">Sources</a><a class="mobile-sub" href="thisweek.html">This Week in Geography</a><a class="mobile-sub" href="sources.html">Geography Sources</a><a href="journey.html">Your Journey</a><a href="contact.html">Contact</a>
   </div>
 </nav>
+
 <div class="page-hero">
-  <div class="page-eyebrow">United Nations</div>
-  <h1 class="page-title">Sustainable Development Goals</h1>
-  <p class="page-lead">In 2015, every country agreed on 17 goals for a better, fairer world by 2030. Click any goal to go directly to its UN page.</p>
+  <div class="page-eyebrow">United Nations · 2015–2030</div>
+  <h1 class="page-title">Sustainable <em>Development Goals</em></h1>
+  <p class="page-lead">In 2015, every country agreed on 17 goals for a better, fairer world by 2030. Five years to go. How are we doing?</p>
 </div>
 <div class="page-accent"></div>
+
 <div class="main">
-  <div class="accent-rule"></div>
+
+  <!-- SDG TILES -->
+  <div class="section-eyebrow" style="margin-bottom:12px;">The 17 Goals — click any to go to its UN page</div>
   <div class="sdg-grid">
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal1" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-01.jpg" alt="SDG 1 No Poverty"></a>
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal2" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-02.jpg" alt="SDG 2 Zero Hunger"></a>
@@ -69,7 +95,56 @@
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal16" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-16.jpg" alt="SDG 16 Peace and Justice"></a>
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal17" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-17.jpg" alt="SDG 17 Partnerships"></a>
   </div>
+
+  <!-- EXTERNAL LINKS -->
+  <div class="section-eyebrow" style="margin-bottom:12px;">Go deeper</div>
+  <div class="link-row">
+    <a class="ext-link" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">↗ UN SDG official site</a>
+    <a class="ext-link" href="https://dashboards.sdgindex.org/" target="_blank">↗ SDG Index 2025 — how is every country tracking?</a>
+    <a class="ext-link outline" href="https://ourworldindata.org/sdgs" target="_blank">↗ SDG Tracker — Our World in Data</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- MAP 1 - POVERTY -->
+  <div class="map-section">
+    <div class="map-label">SDG 1 · No Poverty</div>
+    <div class="map-title">Where do people still live in extreme poverty?</div>
+    <div class="map-desc">Extreme poverty is defined as living on less than $2.15 per day. Move the time slider to see how the map has changed over the past 30 years. Click any country to see its data.</div>
+    <div class="map-frame">
+      <iframe src="https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty?tab=map" loading="lazy" allow="web-share; clipboard-write"></iframe>
+    </div>
+    <div class="map-credit">Chart: <a href="https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty" target="_blank">Our World in Data</a> · CC BY</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- MAP 2 - CO2 -->
+  <div class="map-section">
+    <div class="map-label">SDG 13 · Climate Action</div>
+    <div class="map-title">Who is emitting the most CO₂?</div>
+    <div class="map-desc">CO₂ emissions per person, by country. Use the time slider to see how the picture has shifted since 1900. Which regions have grown fastest? Which have declined?</div>
+    <div class="map-frame">
+      <iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=map" loading="lazy" allow="web-share; clipboard-write"></iframe>
+    </div>
+    <div class="map-credit">Chart: <a href="https://ourworldindata.org/grapher/co-emissions-per-capita" target="_blank">Our World in Data</a> · CC BY</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- MAP 3 - HUNGER -->
+  <div class="map-section">
+    <div class="map-label">SDG 2 · Zero Hunger</div>
+    <div class="map-title">Where are people going hungry?</div>
+    <div class="map-desc">Share of the population that is undernourished — not consuming enough calories for an active, healthy life. Drag the time slider to see progress since 2000, and where the gaps remain.</div>
+    <div class="map-frame">
+      <iframe src="https://ourworldindata.org/grapher/prevalence-of-undernourishment?tab=map" loading="lazy" allow="web-share; clipboard-write"></iframe>
+    </div>
+    <div class="map-credit">Chart: <a href="https://ourworldindata.org/grapher/prevalence-of-undernourishment" target="_blank">Our World in Data</a> · CC BY</div>
+  </div>
+
 </div>
+
 <footer><p>Mrs Perkins · SPCC · Site for educational use only</p></footer>
 <script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
