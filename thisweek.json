@@ -1,34 +1,26 @@
 [
   {
-    "title": "Cyclone Alfred makes landfall on Queensland coast",
-    "url": "https://www.abc.net.au/news/environment",
-    "source": "ABC News",
-    "date": "May 2026",
-    "connection": "Tropical cyclones are powerful examples of extreme weather systems - how they form over warm ocean water and the devastation they cause when they hit land.",
-    "sdg": "SDG 13 - Climate Action"
+    "title": "World Urban Forum backs 'Baku Call to Action' on global housing crisis",
+    "url": "https://news.un.org/en/story/2026/05/1167577",
+    "source": "UN News",
+    "date": "Week of 26 May 2026",
+    "connection": "Over 57,000 people from 176 countries gathered in Baku this week to declare housing a human right, not a market commodity. The forum connects directly to Rural and Urban Places - the idea that rapid urbanisation, inequality and climate change are inseparable problems that cities must solve together.",
+    "sdg": "SDG 11 - Sustainable Cities and Communities"
   },
   {
-    "title": "Great Barrier Reef records third mass bleaching event in five years",
-    "url": "https://www.abc.net.au/news/environment",
-    "source": "ABC Environment",
-    "date": "May 2026",
-    "connection": "Ocean warming and acidification are pushing coral ecosystems to their limits - a direct connection to our Oceanography unit and SDG 14.",
-    "sdg": "SDG 14 - Life Below Water"
+    "title": "Building the smart city: Promise, pitfalls and the people at its heart",
+    "url": "https://news.un.org/en/story/2026/05/1167564",
+    "source": "UN News",
+    "date": "Week of 26 May 2026",
+    "connection": "Shanghai's AI-powered metro, Moscow's city-wide digital twin, flood-proof parks that absorb 15,000 cubic metres of rainwater a day - cities are transforming fast. But experts are asking: who actually benefits? This sits squarely in Rural and Urban Places and raises questions about technology, equity and what a city is actually for.",
+    "sdg": "SDG 11 - Sustainable Cities and Communities"
   },
   {
-    "title": "Pacific Island nations call for stronger emissions commitments at UN summit",
-    "url": "https://www.abc.net.au/news/environment",
-    "source": "ABC News",
-    "date": "May 2026",
-    "connection": "Australia's neighbours in the Pacific face existential threats from sea level rise - this connects directly to our Australia's Neighbours unit and global citizenship.",
-    "sdg": "SDG 17 - Partnerships"
-  },
-  {
-    "title": "Australia's food exports reach record high despite drought in key regions",
-    "url": "https://www.abc.net.au/news/rural",
-    "source": "ABC Rural",
-    "date": "May 2026",
-    "connection": "Primary production under climate pressure - how Australia feeds the world while managing increasingly unreliable rainfall patterns.",
-    "sdg": "SDG 2 - Zero Hunger"
+    "title": "The Sounds of adventure: Exploring NZ's Queen Charlotte Track",
+    "url": "https://www.australiangeographic.com.au/australian-geographic-adventure/2026/05/the-sounds-of-adventure-exploring-nzs-queen-charlotte-track/",
+    "source": "Australian Geographic",
+    "date": "Week of 26 May 2026",
+    "connection": "The Marlborough Sounds in New Zealand's South Island - a place so isolated that boats are the only way in, yet now drawing 35,000 visitors a year to hike, bike and kayak. A real-world example of how tourism transforms remote places, and what sustainable access to natural environments can look like. Connects to Australia's Neighbours and Rural and Urban Places.",
+    "sdg": "SDG 15 - Life on Land"
   }
 ]
