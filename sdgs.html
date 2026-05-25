@@ -6,32 +6,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
-  .sdg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:2.5rem;}
+  .sdg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
   .sdg-tile{border-radius:10px;overflow:hidden;text-decoration:none;display:block;transition:opacity 0.2s,transform 0.15s;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
   .sdg-tile:hover{opacity:0.88;transform:translateY(-3px);}
   .sdg-tile img{width:100%;height:auto;display:block;}
 
-  .link-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2.5rem;}
-  .ext-link{display:inline-flex;align-items:center;gap:7px;background:var(--navy);color:white;text-decoration:none;padding:10px 18px;border-radius:8px;font-size:13px;font-weight:600;transition:background 0.2s;}
-  .ext-link:hover{background:var(--teal-dark);}
-  .ext-link.outline{background:white;color:var(--navy);border:1.5px solid rgba(84,172,185,0.4);}
-  .ext-link.outline:hover{background:var(--cream);}
+  .links-section{margin-top:3.5rem;}
+  .links-divider{height:2px;background:linear-gradient(90deg,var(--teal-mid),transparent);border:none;margin:2.5rem 0;}
 
-  .map-section{margin-bottom:3rem;}
-  .map-label{font-size:10px;font-weight:600;color:var(--teal-mid);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px;}
-  .map-title{font-family:"Playfair Display",serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px;}
-  .map-desc{font-size:13px;color:#4a6270;line-height:1.65;margin-bottom:14px;max-width:680px;}
-  .map-frame{border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,49,70,0.12);}
-  .map-frame iframe{display:block;width:100%;height:500px;border:none;}
-  .map-credit{font-size:11px;color:#8a9aaa;margin-top:6px;}
-  .map-credit a{color:var(--teal-mid);text-decoration:none;}
-  .map-credit a:hover{text-decoration:underline;}
+  .link-group{margin-bottom:2.5rem;}
+  .link-group-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:0.3rem;}
+  .link-group-desc{font-size:14px;color:#4a6270;margin-bottom:1rem;line-height:1.5;}
 
-  .divider{height:1px;background:rgba(84,172,185,0.15);margin:2.5rem 0;}
+  .link-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;}
+  .link-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;flex-direction:column;}
+  .link-card-header{background:var(--navy);padding:14px 16px;}
+  .link-card-header a{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:var(--amber);text-decoration:none;line-height:1.3;display:block;}
+  .link-card-header a:hover{color:var(--yellow);}
+  .link-card-body{padding:12px 16px;flex:1;}
+  .link-card-body p{font-size:13px;color:#4a6270;line-height:1.55;}
+  .link-card-footer{padding:10px 16px;border-top:1px solid #f0e8e3;}
+  .link-card-footer a{font-size:12px;font-weight:600;color:var(--teal-mid);text-decoration:none;letter-spacing:0.3px;}
+  .link-card-footer a:hover{color:var(--navy);}
 
-  @media(max-width:600px){
-    .map-frame iframe{height:380px;}
-  }
+  .source-tag{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:white;background:var(--teal-mid);border-radius:20px;padding:2px 10px;margin-bottom:8px;}
+  .source-tag.youtube{background:#c62828;}
+  .source-tag.trello{background:#0052cc;}
 </style>
 </head>
 <body>
@@ -66,16 +66,14 @@
 </nav>
 
 <div class="page-hero">
-  <div class="page-eyebrow">United Nations · 2015–2030</div>
-  <h1 class="page-title">Sustainable <em>Development Goals</em></h1>
-  <p class="page-lead">In 2015, every country agreed on 17 goals for a better, fairer world by 2030. Five years to go. How are we doing?</p>
+  <div class="page-eyebrow">United Nations</div>
+  <h1 class="page-title">Sustainable Development Goals</h1>
+  <p class="page-lead">In 2015, every country agreed on 17 goals for a better, fairer world by 2030. Click any goal to go directly to its UN page.</p>
 </div>
 <div class="page-accent"></div>
 
 <div class="main">
-
-  <!-- SDG TILES -->
-  <div class="section-eyebrow" style="margin-bottom:12px;">The 17 Goals — click any to go to its UN page</div>
+  <div class="accent-rule"></div>
   <div class="sdg-grid">
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal1" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-01.jpg" alt="SDG 1 No Poverty"></a>
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal2" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-02.jpg" alt="SDG 2 Zero Hunger"></a>
@@ -96,56 +94,118 @@
     <a class="sdg-tile" href="https://sdgs.un.org/goals/goal17" target="_blank"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-17.jpg" alt="SDG 17 Partnerships"></a>
   </div>
 
-  <!-- EXTERNAL LINKS -->
-  <div class="section-eyebrow" style="margin-bottom:12px;">Go deeper</div>
-  <div class="link-row">
-    <a class="ext-link" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">↗ UN SDG official site</a>
-    <a class="ext-link" href="https://dashboards.sdgindex.org/" target="_blank">↗ SDG Index 2025 — how is every country tracking?</a>
-    <a class="ext-link outline" href="https://ourworldindata.org/sdgs" target="_blank">↗ SDG Tracker — Our World in Data</a>
-  </div>
+  <!-- ================================================ -->
+  <!-- SDG ACTION RESOURCES                             -->
+  <!-- ================================================ -->
+  <div class="links-section">
+    <hr class="links-divider">
+    <div class="accent-rule"></div>
+    <div class="section-eyebrow">UN SDG Action Campaign</div>
+    <h2 class="section-title">Going deeper on the Goals</h2>
+    <p class="section-lead">The UN SDG Action Campaign produces resources, videos and campaign materials to help people engage with the Goals. The links below are organised by format so you can find the right resource for your purpose.</p>
 
-  <div class="divider"></div>
+    <!-- GROUP 1: LEARN -->
+    <div class="link-group">
+      <h3 class="link-group-title">Watch and learn</h3>
+      <p class="link-group-desc">Video libraries and channels with expert interviews, explainers and campaign content directly from the UN.</p>
+      <div class="link-cards">
 
-  <!-- MAP 1 - POVERTY -->
-  <div class="map-section">
-    <div class="map-label">SDG 1 · No Poverty</div>
-    <div class="map-title">Where do people still live in extreme poverty?</div>
-    <div class="map-desc">Extreme poverty is defined as living on less than $2.15 per day. Move the time slider to see how the map has changed over the past 30 years. Click any country to see its data.</div>
-    <div class="map-frame">
-      <iframe src="https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty?tab=map" loading="lazy" allow="web-share; clipboard-write"></iframe>
+        <div class="link-card">
+          <div class="link-card-header">
+            <a href="https://sdgactioncampaign.org/virtual-library/" target="_blank" rel="noopener">SDG Action Campaign Virtual Library</a>
+          </div>
+          <div class="link-card-body">
+            <span class="source-tag">Website</span>
+            <p>A curated video library from the UN SDG Action Campaign. Organised by theme including economic justice, gender equality and climate action. Includes short expert interviews and SDG soundbites suitable for classroom use.</p>
+          </div>
+          <div class="link-card-footer">
+            <a href="https://sdgactioncampaign.org/virtual-library/" target="_blank" rel="noopener">Visit Virtual Library &rarr;</a>
+          </div>
+        </div>
+
+        <div class="link-card">
+          <div class="link-card-header">
+            <a href="https://www.youtube.com/@sdgaction" target="_blank" rel="noopener">SDG Action Campaign YouTube Channel</a>
+          </div>
+          <div class="link-card-body">
+            <span class="source-tag youtube">YouTube</span>
+            <p>The official YouTube channel of the UN SDG Action Campaign. Features campaign videos, award winner profiles and interviews with advocates from around the world. Good for finding short, shareable content on specific Goals.</p>
+          </div>
+          <div class="link-card-footer">
+            <a href="https://www.youtube.com/@sdgaction" target="_blank" rel="noopener">Visit Channel &rarr;</a>
+          </div>
+        </div>
+
+        <div class="link-card">
+          <div class="link-card-header">
+            <a href="https://www.youtube.com/user/UnitedNationsDESA" target="_blank" rel="noopener">United Nations DESA YouTube Channel</a>
+          </div>
+          <div class="link-card-body">
+            <span class="source-tag youtube">YouTube</span>
+            <p>The UN Department of Economic and Social Affairs publishes presentations, high-level forum recordings and progress briefings here. Useful for more detailed policy-level content and official SDG reporting events.</p>
+          </div>
+          <div class="link-card-footer">
+            <a href="https://www.youtube.com/user/UnitedNationsDESA" target="_blank" rel="noopener">Visit Channel &rarr;</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="map-credit">Chart: <a href="https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty" target="_blank">Our World in Data</a> · CC BY</div>
-  </div>
 
-  <div class="divider"></div>
+    <!-- GROUP 2: TAKE ACTION -->
+    <div class="link-group">
+      <h3 class="link-group-title">Take action and get involved</h3>
+      <p class="link-group-desc">Campaign boards run by the UN SDG Action Campaign with ideas, resources and calls to action around the Goals. Open to anyone who wants to get involved.</p>
+      <div class="link-cards">
 
-  <!-- MAP 2 - CO2 -->
-  <div class="map-section">
-    <div class="map-label">SDG 13 · Climate Action</div>
-    <div class="map-title">Who is emitting the most CO₂?</div>
-    <div class="map-desc">CO₂ emissions per person, by country. Use the time slider to see how the picture has shifted since 1900. Which regions have grown fastest? Which have declined?</div>
-    <div class="map-frame">
-      <iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=map" loading="lazy" allow="web-share; clipboard-write"></iframe>
+        <div class="link-card">
+          <div class="link-card-header">
+            <a href="https://trello.com/b/W8Z473Kr/un-sdg-action-campaign-flip-the-script" target="_blank" rel="noopener">Flip the Script Campaign Board</a>
+          </div>
+          <div class="link-card-body">
+            <span class="source-tag trello">Trello</span>
+            <p>A campaign action board from the UN SDG Action Campaign. Organised around storytelling and changing the narrative on sustainable development. Useful for finding creative ways to communicate the Goals.</p>
+          </div>
+          <div class="link-card-footer">
+            <a href="https://trello.com/b/W8Z473Kr/un-sdg-action-campaign-flip-the-script" target="_blank" rel="noopener">Open Board &rarr;</a>
+          </div>
+        </div>
+
+        <div class="link-card">
+          <div class="link-card-header">
+            <a href="https://trello.com/b/HTHIFsgC/unite-to-act-campaign-un-sdg-action-campaign" target="_blank" rel="noopener">Unite to Act Campaign Board</a>
+          </div>
+          <div class="link-card-body">
+            <span class="source-tag trello">Trello</span>
+            <p>A campaign coordination board from the UN SDG Action Campaign with resources and actions for mobilising people around the Goals. Good for seeing how global campaigns are organised and communicated.</p>
+          </div>
+          <div class="link-card-footer">
+            <a href="https://trello.com/b/HTHIFsgC/unite-to-act-campaign-un-sdg-action-campaign" target="_blank" rel="noopener">Open Board &rarr;</a>
+          </div>
+        </div>
+
+        <div class="link-card">
+          <div class="link-card-header">
+            <a href="https://trello.com/b/8fhsz1yD/sdgbutterflyeffect" target="_blank" rel="noopener">SDG Butterfly Effect Campaign Board</a>
+          </div>
+          <div class="link-card-body">
+            <span class="source-tag trello">Trello</span>
+            <p>Explores the idea that individual and community actions create ripple effects across the Goals. A useful entry point for discussing interconnection between the SDGs and the role everyday choices play in sustainable development.</p>
+          </div>
+          <div class="link-card-footer">
+            <a href="https://trello.com/b/8fhsz1yD/sdgbutterflyeffect" target="_blank" rel="noopener">Open Board &rarr;</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="map-credit">Chart: <a href="https://ourworldindata.org/grapher/co-emissions-per-capita" target="_blank">Our World in Data</a> · CC BY</div>
-  </div>
 
-  <div class="divider"></div>
-
-  <!-- MAP 3 - HUNGER -->
-  <div class="map-section">
-    <div class="map-label">SDG 2 · Zero Hunger</div>
-    <div class="map-title">Where are people going hungry?</div>
-    <div class="map-desc">Share of the population that is undernourished — not consuming enough calories for an active, healthy life. Drag the time slider to see progress since 2000, and where the gaps remain.</div>
-    <div class="map-frame">
-      <iframe src="https://ourworldindata.org/grapher/prevalence-of-undernourishment?tab=map" loading="lazy" allow="web-share; clipboard-write"></iframe>
-    </div>
-    <div class="map-credit">Chart: <a href="https://ourworldindata.org/grapher/prevalence-of-undernourishment" target="_blank">Our World in Data</a> · CC BY</div>
   </div>
+  <!-- END SDG ACTION RESOURCES -->
 
 </div>
 
-<footer><p>Mrs Perkins · SPCC · Site for educational use only</p></footer>
+<footer><p>Mrs Perkins &middot; SPCC &middot; Site for educational use only</p></footer>
 <script data-goatcounter="https://mrsperkinsgeography.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
